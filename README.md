@@ -32,10 +32,10 @@ setup.sh will add :
     ```
     
 to /etc/environment
-    - it disables NetworkManager and Firewalld because Firewalld uses iptables so certain steps will fail also NetworkManager will tend to change network adapters that openstack is aware of.
-    - activates the network service
-    -changes Linux policy(turns SELINUX to permissive )
-    Finally it will ask you to reboot your system
+* it disables NetworkManager and Firewalld because Firewalld uses iptables so certain steps will fail also NetworkManager will tend to change network adapters that openstack is aware of.
+* activates the network service
+* changes Linux policy(turns SELINUX to permissive )
+* Finally it will ask you to reboot your system
     
 ### add execution permission to packstack.sh and run it    
 
@@ -52,4 +52,4 @@ packstack will install packstack on your machine then it run the command :
     
 answer.txt contains all the modules that they will be installed so you can change using your preferred text editor
     finally it will run packstack which will install the modules that you chose.
-    That's all be patient
+### That's all be patient
